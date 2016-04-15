@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteCond $1 !^(index\.php|css|img|js|cron|uploads|cvs|css|tmp|sqlyog_tunnel.php|ntunnel_mysql.php|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
